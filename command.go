@@ -947,6 +947,7 @@ func (c *Command) ExecuteC() (cmd *Command, err error) {
 		cmd.ctx = c.ctx
 	}
 
+	flags = []string{}
 	err = cmd.execute(flags)
 	if err != nil {
 		// Always show help if requested, even if SilenceErrors is in
